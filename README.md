@@ -22,6 +22,18 @@ git clone https://github.com/berriesyl/Hospital-Register-Application.git
 cd Hospital-Register-Application
 ```
 
+⚠️ Not (Windows Kullanıcıları için)
+Eğer projeyi GitHub üzerinden git clone komutu ile indirirseniz, bazı dosyalarda satır sonu (CRLF vs LF) uyumsuzluğu nedeniyle çalışmama problemi yaşanabilir (örneğin sh betikleri çalışmaz).
+Bu sorun genellikle Windows'un CRLF karakteri ile çalışmasından kaynaklanır.
+
+Bunun yerine projeyi GitHub’dan .zip olarak indirirseniz bu uyumsuzluk genellikle yaşanmaz.
+Eğer yine de git clone kullanmak isterseniz, repoyu klonlamadan önce aşağıdaki Git ayarlarını yapmanız önerilir:
+
+```
+git config --global core.eol lf
+git config --global core.autocrlf false
+```
+
 ### 2. Ortam Değişkenlerini Oluşturun (.env)
 
 Proje dizinine eğer yoksa .env dosyası oluşturun ve aşağıdaki gibi düzenleyin (Password'leri
