@@ -1,5 +1,5 @@
-# Hospital Register Application
-
+# Hospital Register Web Application
+## (Hastane Kayıt Web Uygulaması)
 Bu proje, Flask ve MySQL kullanılarak geliştirilen bir Hasta Kayıt Web Uygulamasıdır.
 
 ## Proje Özeti
